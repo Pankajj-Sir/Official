@@ -12,11 +12,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1433202315516542');
+fbq('init', 'xxxxxxxxxxx');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1433202315516542&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=xxxxxxxxxxx&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
     <!-- Inline Critical CSS -->
@@ -313,7 +313,7 @@ src="https://www.facebook.com/tr?id=1433202315516542&ev=PageView&noscript=1"
                     <div class="logo">
                         <img id="logo-image" src="Harsh bhagat.jpg" alt="Educational Channel Logo" loading="lazy">
                     </div>
-                    <a id="telegram-link" onclick="customEvent()" class="cta" href="#">Join Free Telegram</a>
+                    <a id="telegram-link" class="cta" href="#">Join Free Telegram</a>
                     <div class="feature-card">
                         <p class="green"><span class="emoji">✅</span> Discover Elite Financial Education & Trading Basics</p>
                     </div>
@@ -340,37 +340,5 @@ src="https://www.facebook.com/tr?id=1433202315516542&ev=PageView&noscript=1"
             document.getElementById('telegram-link').href = config.telegramLink;
         });
     </script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const btn = document.getElementById("telegram-link");
-  if (!btn) return;
-
-  btn.addEventListener("click", function (e) {
-
-    // ✅ Sirf real human click
-    if (!e.isTrusted) {
-      e.preventDefault();
-      return;
-    }
-
-    // ✅ Already tracked?
-    if (localStorage.getItem("telegram_subscribed") === "true") {
-      return;
-    }
-
-    localStorage.setItem("telegram_subscribed", "true");
-
-    const eventId = "tg_sub_" + Date.now();
-
-    if (typeof fbq !== "undefined") {
-      fbq('track', 'Subscribe', {}, { eventID: eventId });
-    }
-
-  });
-
-});
-</script>
 
 </body></html>
